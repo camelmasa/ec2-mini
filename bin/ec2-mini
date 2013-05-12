@@ -4,4 +4,9 @@ $:.unshift File.expand_path("../../lib", __FILE__)
 
 require "ec2-mini/cli"
 
-EC2Mini::CLI.start
+home_config = "#{ENV['HOME']}/.ec2-mini"
+current_config = "#{ENV['PWD']}/.ec2-mini"
+config_file = File.exist?(home_config) ? home_config : current_config
+
+client = EC2Mini::CLI.new(nil, config_file)
+client.start
