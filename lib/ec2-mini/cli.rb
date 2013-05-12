@@ -4,6 +4,7 @@ require 'yaml'
 module EC2Mini
   class CLI
 
+    #TODO not array
     def initialize(options = nil, config_file = nil)
       @options = options || load_config_file(config_file)
 
