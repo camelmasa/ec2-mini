@@ -4,7 +4,7 @@ require 'yaml'
 module EC2Mini
   class CLI
 
-    def initialize(options = nil, config_file = '')
+    def initialize(options = nil, config_file = nil)
       @options = options || load_config_file(config_file)
 
       ['access_key_id', 'secret_access_key', 'region'].each do |attribute|
