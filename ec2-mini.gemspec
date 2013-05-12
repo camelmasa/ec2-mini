@@ -15,5 +15,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'aws-sdk'
 
   gem.executables = "ec2-mini"
-  gem.files = Dir["**/*"].select { |d| d =~ %r{^(bin/|lib/)} }
+  gem.files = Dir["**/*"].select { |d| d =~ %r{^(README|bin/|lib/|spec/)} }
 end
