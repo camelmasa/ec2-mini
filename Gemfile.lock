@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ec2-mini (0.0.1)
+    ec2-mini (0.0.2)
       aws-sdk
 
 GEM
