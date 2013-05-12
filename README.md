@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/camelmasa/ec2-mini.png)](http://travis-ci.org/camelmasa/ec2-mini)
+
 Install
 ---
 
